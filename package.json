@@ -2,12 +2,14 @@
   "name": "css-byebye",
   "version": "0.0.1",
   "description": "Remove the CSS rules that you don't want, with a list of selectors",
+  "homepage": "https://github.com/AoDev/css-byebye",
+  "repository" : { "type" : "git", "url" : "https://github.com/AoDev/css-byebye.git" },
   "main": "lib/css-byebye.js",
   "scripts": {
     "test": "grunt test"
   },
   "keywords": [
-    "css, bye, remove"
+    "css, byebye, remove"
   ],
   "author": "Kevin Purnelle <kevin.purnelle@gmail.com> (http://kevinpurnelle.com/)",
   "license": "MIT",
