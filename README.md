@@ -46,8 +46,12 @@ var rulesToRemove = ['.hello', '.world']
 var result = cssbyebye.process(css, { rulesToRemove: rulesToRemove, map: false })
 ```
 
-Result will contain
+`result` will be an object like this:
+
 ```
-'a { font-size: 12px; }'
+{
+  css: 'a { font-size: 12px; }'
+}
 ```
 
+If you use the postcss map option, then it will be added to the result object.
