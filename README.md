@@ -24,7 +24,7 @@ CSS Byebye is a CSS post processor built with `postcss`; part of its API is defi
 
 It exposes a `process` method with the following signature:
 
-```
+```js
 process(css, options)
 ```
 
@@ -37,7 +37,7 @@ process(css, options)
 
 ### Example ###
 
-```
+```js
 var cssbyebye = require('css-byebye')
 
 var css = 'a { font-size: 12px; } .hello .h1 { background: red } .world { color: blue }'
@@ -48,7 +48,7 @@ var result = cssbyebye.process(css, { rulesToRemove: rulesToRemove, map: false }
 
 `result` will be an object like this:
 
-```
+```css
 {
   css: 'a { font-size: 12px; }'
 }
