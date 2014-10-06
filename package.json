@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Remove the CSS rules that you don't want, with a list of selectors",
   "homepage": "https://github.com/AoDev/css-byebye",
-  "repository" : { "type" : "git", "url" : "https://github.com/AoDev/css-byebye.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AoDev/css-byebye.git"
+  },
   "main": "lib/css-byebye.js",
   "scripts": {
     "test": "grunt test"
@@ -17,8 +20,9 @@
     "postcss": "^2.2.4"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
     "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.16",
     "grunt-mocha-test": "^0.12.0",
     "load-grunt-tasks": "^0.6.0",
     "mocha": "^1.21.4"
