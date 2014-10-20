@@ -31,17 +31,18 @@ process(css, options)
 * css is your stylesheet
 * options is an object that has at least the `rulesToRemove` property defined.
 
-`rulesToRemove` is an array of strings (selectors).
+`rulesToRemove` is an array of `strings` or `regular expressions` (selectors).
+
+If you provide a string, it will remove the rule(s) for this exact selector.
 
 
-
-### Example ###
+### Examples ###
 
 ```js
 var cssbyebye = require('css-byebye')
 
 var css = 'a { font-size: 12px; } .hello .h1 { background: red } .world { color: blue }'
-var rulesToRemove = ['.hello', '.world']
+var rulesToRemove = ['.hello .h1', '.world']
 
 var result = cssbyebye.process(css, { rulesToRemove: rulesToRemove, map: false })
 ```
@@ -55,3 +56,24 @@ var result = cssbyebye.process(css, { rulesToRemove: rulesToRemove, map: false }
 ```
 
 If you use the postcss map option, then it will be added to the result object.
+
+
+#### You can mix strings and regular expressions
+
+```js
+var rulesToRemove = ['.hello', '/.*\.world.*/']
+```
+
+In this case, it would remove a rule with the exact selector `.hello` and any rule
+that contains the `.world` class.
+
+
+
+Changelog
+----------
+
+### 2015-10-19 v0.2.0
+* The default behaviour is to match the exact selector when a string is given.
+* Added the possibility to match with regular expressions.
+
+
