@@ -61,7 +61,7 @@ If you use the postcss map option, then it will be added to the result object.
 #### You can mix strings and regular expressions
 
 ```js
-var rulesToRemove = ['.hello', '/.*\.world.*/']
+var rulesToRemove = ['.hello', /.*\.world.*/]
 ```
 
 In this case, it would remove a rule with the exact selector `.hello` and any rule
