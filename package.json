@@ -17,7 +17,7 @@
   "author": "Kevin Purnelle <kevin.purnelle@gmail.com> (http://kevinpurnelle.com/)",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^2.2.4"
+    "postcss": "^4.1.11"
   },
   "devDependencies": {
     "chai": "^1.9.1",
