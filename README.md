@@ -1,6 +1,8 @@
 CSS Byebye
 ===========
 
+[![Join the chat at https://gitter.im/AoDev/css-byebye](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AoDev/css-byebye?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 CSS Byebye is a node module that lets you explicitly remove the CSS rules that you don't want.
 
 
