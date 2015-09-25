@@ -7,6 +7,7 @@ CSS Byebye is a node module that lets you explicitly remove the CSS rules that y
 
 [![Join the chat at https://gitter.im/AoDev/css-byebye](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AoDev/css-byebye?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Build Status](https://travis-ci.org/AoDev/css-byebye.svg)](https://travis-ci.org/AoDev/css-byebye)
 
 Description
 ------------
