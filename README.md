@@ -12,7 +12,7 @@ CSS Byebye is a node module that lets you explicitly remove the CSS rules that y
 Description
 ------------
 
-It's very simple: pass him a list of selectors that you want to exclude and it will remove them and the associated rules from your CSS.
+It's very simple: pass a list of selectors that you want to exclude and it will remove them and the associated rules from your CSS.
 
 I've found some cases where this approach is easier than using more powerful tools like uncss.
 Use what's best for you and give some feedback :)
@@ -47,40 +47,60 @@ If you provide a string, it will remove the rule(s) for this exact selector.
 
 ### Examples ###
 
+Some CSS:
+
+```css
+ a { font-size: 12px; }
+ .hello .h1 { background: red }
+ .world { color: blue }
+```
+
+Using the plugin:
+
 ```js
 var postcss = require('postcss')
 var cssbyebye = require('css-byebye')
 
-var css = 'a { font-size: 12px; } .hello .h1 { background: red } .world { color: blue }'
 var rulesToRemove = ['.hello .h1', '.world']
 var options = { rulesToRemove: rulesToRemove, map: false }
+
+// pretend that css var contains the css above
 var result = postcss(cssbyebye(options)).process(css)
 ```
 
 `result` will be an object like this:
 
-```css
+```js
 {
   css: 'a { font-size: 12px; }'
 }
 ```
 
-If you use the postcss map option, then it will be added to the result object.
+If you use the postcss `map` option, then source map will be added to the result object.
 
 
 #### You can mix strings and regular expressions
 
 ```js
-var rulesToRemove = ['.hello', /.*\.world.*/]
+var rulesToRemove = [
+  '.hello',
+  /.*\.world.*/
+]
 ```
 
-In this case, it would remove a rule with the exact selector `.hello` and any rule
-that contains the `.world` class.
+In this case, it would:
+* remove a rule with the exact selector `.hello`
+* remove any rule that contains the `.world` class.
 
 
 
 Changelog
 ----------
+
+### 2015-09-25 v1.0.1
+* Upgrade to postCSS 5.x
+* Docs improved.
+* The project uses js standard code style.
 
 ### 2015-06-09 v1.0.0
 * **Breaking changes** and bumped to 1.0.0
