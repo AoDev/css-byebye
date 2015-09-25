@@ -1,10 +1,12 @@
 CSS Byebye
 ===========
 
-[![Join the chat at https://gitter.im/AoDev/css-byebye](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AoDev/css-byebye?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 CSS Byebye is a node module that lets you explicitly remove the CSS rules that you don't want.
 
+---------
+
+[![Join the chat at https://gitter.im/AoDev/css-byebye](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AoDev/css-byebye?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 Description
 ------------
@@ -16,7 +18,7 @@ Use what's best for you and give some feedback :)
 
 CSS Byebye is built with [postcss](https://github.com/postcss/postcss).
 
-A grunt task for CSS Byebye exists: [grunt-css-byeby](https://github.com/AoDev/grunt-css-byebye).
+A grunt task for CSS Byebye exists: [grunt-css-byebye](https://github.com/AoDev/grunt-css-byebye).
 
 
 Usage
