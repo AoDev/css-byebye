@@ -97,6 +97,10 @@ In this case, it would:
 Changelog
 ----------
 
+### 2017-01-10 v1.0.2
+* Ignore keyframes
+* Upgrade deps
+
 ### 2015-09-25 v1.0.1
 * Upgrade to postCSS 5.x
 * Docs improved.
