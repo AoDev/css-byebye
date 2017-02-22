@@ -14,7 +14,7 @@
     "test": "TZ=utc mocha 'lib/**/*spec.js'"
   },
   "keywords": [
-    "css, byebye, remove"
+    "css, byebye, remove, rules, selector, regex"
   ],
   "author": "Kevin Purnelle <kevin.purnelle@gmail.com> (http://kevinpurnelle.com/)",
   "license": "MIT",
