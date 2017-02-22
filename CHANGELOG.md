@@ -1,3 +1,9 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/AoDev/css-byebye/compare/1.0.1...v1.1.0) (2017-02-22)
+
+### Features
+
+* **atRules:** Remove matching AtRules ([0badb2f](https://github.com/AoDev/css-byebye/commit/0badb2f))
 
 ### 2015-09-25 v1.0.1
 * Upgrade to postCSS 5.x
