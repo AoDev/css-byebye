@@ -9,7 +9,7 @@
   },
   "main": "lib/css-byebye.js",
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release": "standard-version",
     "lint": "eslint lib",
     "test": "TZ=utc mocha 'lib/**/*spec.js'"
   },
@@ -22,11 +22,11 @@
     "postcss": "^6.0.19"
   },
   "devDependencies": {
-    "conventional-changelog": "^1.1.0",
     "eslint": "3.16.0",
     "eslint-config-standard": "6.2.1",
     "eslint-plugin-promise": "3.4.2",
     "eslint-plugin-standard": "2.0.1",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "standard-version": "4.3.0"
   }
 }
