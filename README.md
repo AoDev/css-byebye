@@ -19,8 +19,6 @@ Use what's best for you and give some feedback :)
 
 CSS Byebye is built with [postcss](https://github.com/postcss/postcss).
 
-A grunt task for CSS Byebye exists: [grunt-css-byebye](https://github.com/AoDev/grunt-css-byebye).
-
 
 Usage
 ------
