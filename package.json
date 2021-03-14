@@ -1,6 +1,6 @@
 {
   "name": "css-byebye",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Remove the CSS rules that you don't want, with a list of selectors",
   "homepage": "https://github.com/AoDev/css-byebye",
   "repository": {
