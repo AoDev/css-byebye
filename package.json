@@ -9,9 +9,10 @@
   },
   "main": "lib/css-byebye.js",
   "scripts": {
-    "release": "standard-version",
+    "release": "npm test && standard-version",
     "lint": "eslint lib",
-    "test": "TZ=utc mocha 'lib/**/*spec.js'"
+    "test": "TZ=utc mocha 'lib/**/*spec.js'",
+    "test-unit": "TZ=utc mocha 'lib/**/*spec.js'"
   },
   "keywords": [
     "css, byebye, remove, rules, selector, regex"
