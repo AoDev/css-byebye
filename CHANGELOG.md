@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/AoDev/css-byebye/compare/v3.0.0...v3.1.0) (2021-11-17)
+
+
+### Features
+
+* **comments:** implements control directives through comments ([#18](https://github.com/AoDev/css-byebye/issues/18)) ([0394fb1](https://github.com/AoDev/css-byebye/commit/0394fb1b35526f643fcae9134366a61fae00d9c2))
+
 ## [3.0.0](https://github.com/AoDev/css-byebye/compare/v2.0.2...v3.0.0) (2021-03-14)
 
 
