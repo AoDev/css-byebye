@@ -90,3 +90,34 @@ In this case, it would:
 * remove a rule with the exact selector `.hello`
 * remove any rule that contains the `.world` class.
 
+#### Control directives
+
+You can ignore certain rules or certain block of rules to avoid them being removed, even if they match the criteria, adding comments with control directives. These comments will be removed from the final code.
+
+```javascript
+var rulesToRemove = ['.hello .h1', '.world']
+```
+
+###### input
+
+```css
+ a { font-size: 12px; }
+/* byebye:ignore */
+.hello .h1 { background: red }
+.hello .h1 { text-align: left }
+/* byebye:begin:ignore */
+.world { color: blue }
+.world { border: 1px solid #CCC }
+/* byebye:end:ignore */
+.world { background: white }
+```
+
+###### output
+
+```css
+a { font-size: 12px; }
+.hello .h1 { background: red }
+.world { color: blue }
+.world { border: 1px solid #CCC }
+```
+
