@@ -1,14 +1,3 @@
-/**
- * Object.getValues polyfill
- * @param  {Object} obj object
- * @return {Array}
- */
-function getValues(obj) {
-  return Object.keys(obj).map(function (key) {
-    return obj[key]
-  })
-}
-
 const CONTROL_DIRECTIVE_REG_EXP = /^\/\*!? *byebye:?(begin|end)?:(\w+) *\*\/$/
 
 const CONTROL_DIRECTIVES = {
@@ -20,19 +9,19 @@ const CONTROL_DIRECTIVES_BLOCKS = {
   END: 'end',
 }
 
-const controlDirectivesValues = getValues(CONTROL_DIRECTIVES)
-const controlDirectivesBlockValues = getValues(CONTROL_DIRECTIVES_BLOCKS)
+const controlDirectivesValues = Object.values(CONTROL_DIRECTIVES)
+const controlDirectivesBlockValues = Object.values(CONTROL_DIRECTIVES_BLOCKS)
 
 /**
  * Check if a directive match is a valid one
  * @param  {Mixed Array} match string match
  * @return {Boolean}
  */
-function isValidMatchDirective(match) {
+const isValidMatchDirective = (match) => {
   if (Array.isArray(match)) {
     return (
-      controlDirectivesValues.indexOf(match[2]) >= 0 &&
-      (typeof match[1] === 'undefined' || controlDirectivesBlockValues.indexOf(match[1]) >= 0)
+      !!~controlDirectivesValues.indexOf(match[2]) &&
+      (typeof match[1] === 'undefined' || !!~controlDirectivesBlockValues.indexOf(match[1]))
     )
   }
   return false
@@ -43,7 +32,7 @@ function isValidMatchDirective(match) {
  * @param  {Comment} comment postcss comment
  * @return {Directive object}
  */
-function getControlDirective(comment) {
+const getControlDirective = (comment) => {
   const commentStr = comment.toString()
   const match = commentStr.match(CONTROL_DIRECTIVE_REG_EXP)
   if (match && isValidMatchDirective(match)) {
@@ -56,8 +45,4 @@ function getControlDirective(comment) {
   return null
 }
 
-module.exports = {
-  CONTROL_DIRECTIVES,
-  CONTROL_DIRECTIVES_BLOCKS,
-  getControlDirective,
-}
+export {CONTROL_DIRECTIVES, CONTROL_DIRECTIVES_BLOCKS, getControlDirective}
