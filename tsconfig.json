@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "lib/",
+        "module": "esnext",
+        "target": "es5",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "baseUrl": "./src",
+    },
+    "include": ["src/css-byebye.js"],
+    "exclude": ["node_modules"]
+}
