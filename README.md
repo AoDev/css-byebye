@@ -16,10 +16,18 @@ Use what's best for you and give some feedback :)
 
 CSS Byebye is built with [postcss](https://github.com/postcss/postcss).
 
+## Install
+
+```
+npm install postcss css-byebye -D
+```
+
+From v4, postcss is a peer dependency that you need to install yourself.
+
 ## Usage
 
-CSS Byebye is a CSS post processor and a `postcss` plugin;
-read the [postcss docs](https://github.com/postcss/postcss/blob/master/docs/api.md) for more details.
+CSS Byebye is a CSS post processor and a `postcss` plugin.  
+Read the [postcss docs](https://github.com/postcss/postcss#usage) to know how to use it for your setup.
 
 **Run it as indicated in postcss docs:**
 
