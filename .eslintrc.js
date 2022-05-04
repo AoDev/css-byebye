@@ -5,7 +5,7 @@ module.exports = {
     mocha: true,
   },
 
-  plugins: ["standard", "import"],
+  plugins: ['standard', 'import'],
 
-  extends: ["eslint-config-standard", "plugin:prettier/recommended"],
-};
+  extends: ['eslint-config-standard', 'plugin:prettier/recommended'],
+}
