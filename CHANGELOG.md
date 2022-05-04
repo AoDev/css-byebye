@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/AoDev/css-byebye/compare/v3.1.1...v4.0.0) (2022-05-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* This plugin work only with postCSS v8+ from now on.
+
+### Bug Fixes
+
+* use the new postcss plugin api (breaking change) ([3d5e71b](https://github.com/AoDev/css-byebye/commit/3d5e71b5fd295138c89dc53555693f15068b03c4))
+
 ### [3.1.1](https://github.com/AoDev/css-byebye/compare/v3.1.0...v3.1.1) (2022-04-29)
 
 ## [3.1.0](https://github.com/AoDev/css-byebye/compare/v3.0.0...v3.1.0) (2021-11-17)
